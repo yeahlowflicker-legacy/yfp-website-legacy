@@ -1,0 +1,44 @@
+.navbar
+{
+     z-index: 1;
+     position: fixed;
+     background-color: #242424;
+     height: 75px;
+     width: 100%;
+}
+
+
+.navbar a
+{
+     float: right;
+     display: inline-block;
+     margin-right: 20px;
+     margin-top: 25px;
+
+     color: white;
+     font-family: Sawasdee;
+     font-size: 24px;
+     text-decoration: none;
+}
+
+
+.icon
+{
+     float:left;
+     width: 28px;
+     height: 35px;
+     margin-left: 25px;
+     margin-top: 18px;
+}
+
+
+.title
+{
+     color: white;
+     font-family: Sawasdee;
+     font-weight: lighter;
+     font-size: 36px;
+     float: left;
+     margin-top: 22px;
+     margin-left: 15px;
+}
