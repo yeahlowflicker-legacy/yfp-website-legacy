@@ -1,0 +1,155 @@
+
+
+body
+{
+     background: #333333;
+     margin: 0;
+}
+
+
+
+
+.layer0
+{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+}
+
+
+
+.layer1
+{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 940px;
+}
+
+
+
+
+
+
+.slogan
+{
+     position: absolute;
+     top: 500px;
+     left: 100px;
+
+     color: white;
+     font-family: Sawasdee;
+     font-size: 48px;
+     text-align: center;
+     user-select: none;
+}
+
+
+
+.img_procedural_planet
+{
+     height: 100%;
+
+     background: url("procedural_planet.png");
+     background-size: cover;
+}
+
+.img_drivetho
+{
+     height: 100%;
+     margin-top: 700px;
+
+     background: url("drivetho.png");
+     background-size: cover;
+}
+
+
+
+
+.description_container
+{
+     width: 100%;
+     height: 700px;
+     display: block;
+     z-index: 1;
+
+     background-color: white;
+}
+
+
+.short_intro
+{
+     width: 100%;
+     margin-top: 150px;
+     display: inline-block;
+     z-index: inherit;
+
+     font-size: 35;
+     font-family: Sawasdee;
+     text-align: center;
+     user-select: none;
+}
+
+
+.works
+{
+     height: 150px;
+     display: flex;
+     justify-content: center;
+     margin-top: 100px;
+     z-index: inherit;
+
+     background-color: white;
+}
+
+
+.works li
+{
+     width: 300px;
+     z-index: inherit;
+
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+
+     animation-name: show_work_items;
+     animation-duration: 3s;
+}
+
+
+.works img
+{
+     width: 150px;
+     height: 150px;
+     margin: auto;
+     z-index: inherit;
+
+     user-select: none;
+
+     animation-name: show_work_items;
+     animation-duration: 3s;
+}
+
+
+.works label
+{
+     width: inherit%;
+     margin-top: 30px;
+     z-index: inherit;
+
+     font-family: Sawasdee;
+     font-weight: 500;
+     font-size: 24px;
+     text-align: center;
+     user-select: none;
+
+     animation-name: show_work_items;
+     animation-duration: 3s;
+}
+
+
+@@keyframes show_work_items
+{
+     from { opacity: 0.0; }
+     to { opacity: 1.0;}
+}
