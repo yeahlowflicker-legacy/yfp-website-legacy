@@ -1,34 +1,17 @@
-
-
 body
 {
-     background: #333333;
      margin: 0;
+
+     background: #333333;
 }
 
 
 
-
-.layer0
+.page_wrapper
 {
-     position: absolute;
-     width: 100%;
-     height: 100%;
+     padding-top: 75px;
+     min-height: 87%;
 }
-
-
-
-.layer1
-{
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     top: 940px;
-}
-
-
-
-
 
 
 .slogan
@@ -44,24 +27,6 @@ body
      user-select: none;
 }
 
-
-
-.img_procedural_planet
-{
-     height: 100%;
-
-     background: url("procedural_planet.png");
-     background-size: cover;
-}
-
-.img_drivetho
-{
-     height: 100%;
-     margin-top: 700px;
-
-     background: url("drivetho.png");
-     background-size: cover;
-}
 
 
 

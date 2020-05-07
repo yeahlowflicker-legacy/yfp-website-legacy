@@ -1,0 +1,35 @@
+footer
+{
+     width: 100%;
+     height: 50px;
+
+     background-color: #242424;
+}
+
+
+
+footer label
+{
+     margin-top: 15px;
+     margin-right: 20px;
+     float: right;
+
+     font-family: Sawasdee;
+     font-size: 20px;
+     color: #CACACA;
+}
+
+
+
+
+footer a
+{
+     display: inline-block;
+     margin-top: 15px;
+     margin-left: 20px;
+
+     font-family: Sawasdee;
+     font-size: 20px;
+     color: white;
+     text-decoration: none;
+}

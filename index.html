@@ -4,23 +4,23 @@
 
 <head>
      <title>Yeahlowflicker Production</title>
-     <link rel="stylesheet" href="home.css">
+     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 
 <header>
-     <link rel="stylesheet" href="navbar.css">
+     <link rel="stylesheet" href="./css/navbar.css">
      <nav class="navbar">
-          <img class="icon" src="YFV4_transparent.png">
+          <img class="icon" src="./res/YFV4_transparent.png">
           <h1 class="title">Yeahlowflicker Production</h1>
 
           <a href="about.html">About Us</a>
-          <a href="">Contact</a>
-          <a href="">Projects</a>
-          <a href="">Games</a>
-          <a href="">Software</a>
-          <a href="">News</a>
-          <a href="home.html">Home</a>
+          <!--<a href="contact.html">Contact</a>-->
+          <a href="projects.html">Projects</a>
+          <!--<a href="games.html">Games</a>-->
+          <!--<a href="software.html">Software</a>-->
+          <!--<a href="news.html">News</a>-->
+          <a href="index.html">Home</a>
      </nav>
 </header>
 
@@ -28,54 +28,54 @@
 
 <body>
 
-     <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php"; include($IPATH."navbar.html"); ?>
+     <section "page_wrapper">
 
-
-     <!--<img class="bg" src="YFV3_Wallpaper.png" width="100%">
-     <img class="bg" src="YFV4_16_9.png" width="100%">-->
-
-
-     <div class="img_procedural_planet" width="100%"></div>
-     <div class="slogan">Think Beyond The Future, Work Beyond Your Thoughts.</div>
+          <img src="./res/procedural_planet.png" width="100%">
+          <label class="slogan">Think Beyond The Future, Work Beyond Your Thoughts.</label>
 
 
 
-     <div class="description_container">
-          <label class="short_intro">WE DEVELOP VARIOUS TYPES OF PRODUCTS</label>
+          <section class="description_container">
+               <label class="short_intro">WE DEVELOP VARIOUS TYPES OF PRODUCTS</label>
 
-          <ul class="works">
-               <li>
-                    <img src="desktop_software_icon.png">
-                    <label>Desktop Applications</label>
-               </li>
-               <li>
-                    <img src="mobile_software_icon.png">
-                    <label>Mobile Applications</label>
-               </li>
-               <li>
-                    <img src="games_icon.png">
-                    <label>Video Games</label>
-               </li>
-               <li>
-                    <img src="open_source_icon.png">
-                    <label>Open Source Projects</label>
-               </li>
-               <li>
-                    <img src="media_icon.png">
-                    <label>Media Production</label>
-               </li>
+               <ul class="works">
+                    <li>
+                         <img src="./res/desktop_software_icon.png">
+                         <label>Desktop Applications</label>
+                    </li>
+                    <li>
+                         <img src="./res/mobile_software_icon.png">
+                         <label>Mobile Applications</label>
+                    </li>
+                    <li>
+                         <img src="./res/games_icon.png">
+                         <label>Video Games</label>
+                    </li>
+                    <li>
+                         <img src="./res/open_source_icon.png">
+                         <label>Open Source Projects</label>
+                    </li>
+                    <li>
+                         <img src="./res/media_icon.png">
+                         <label>Media Production</label>
+                    </li>
+               </ul>
+          </section>
 
-          </ul>
-     </div>
+
+          <img src="./res/cb_drive.png" width="100%">
+
+     </section>
+
 </body>
 
 
 
-<link rel="stylesheet" href="footer.css">
-<footer class="footer_container">
-     <button class="social_button"><img class="social_image" src="instagram_icon.png"></button>
-     <button class="social_button"><img class="social_image" src="youtube_icon.png"></button>
-     <label class="footer_label">Copyright © 2020 Yeahlowflicker Production</label>
+<link rel="stylesheet" href="./css/footer.css">
+<footer>
+     <a href="https://www.instagram.com/yeahlowflickerproduction" target="_blank">Instagram</a>
+     <a href="https://www.youtube.com/channel/UCyOZNX6yoHb-vBhthVBKzQg" target="_blank">YouTube</a>
+     <label>Copyright © 2020 Yeahlowflicker Production</label>
 </footer>
 
 
