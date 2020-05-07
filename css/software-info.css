@@ -55,6 +55,33 @@ ul
 
 
 
+
+
+.image-slide
+{
+     margin-top: 40px;
+     display: flex;
+     justify-content: center;
+
+     background-color: black;
+}
+
+
+
+
+
+.doc_image
+{
+     margin-bottom: 50px;
+     margin-left: 80px;
+     width: 80%;
+     height: auto;
+}
+
+
+
+
+
 .links
 {
      margin-left: 60px;

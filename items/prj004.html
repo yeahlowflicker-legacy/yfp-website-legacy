@@ -29,7 +29,13 @@
      <section class="page_wrapper">
 
           <label class="page_title">SFW000 | Unity Language Toolkit</label>
-          <label class="uuid_label">PRJ004</label>
+          <label class="uuid_label">PRJ004 | Extension</label>
+
+
+
+          <section class="image-slide">
+               <img src="../res/PRJ004/YFULT-0.png"></img>
+          </section>
 
 
 
@@ -38,8 +44,10 @@
                <a class="links" href="#introduction">Introduction</a>
                <a class="links" href="#documentation">Documentation</a>
                <a class="links" href="#api_ref">API Reference</a>
+               <a class="links" href="#license">License</a>
                <a class="links" href="#links">Links</a>
           </section>
+
 
 
 
@@ -47,6 +55,14 @@
           <section class="page_section" id="introduction">
                <h1>Introduction</h1>
                <p>Unity Language Toolkit is a utility took built for Unity Engine. It allows users set variables in multiple languages and retrieve the values via scripting.</p>
+               <p>Features:</p>
+               <ul>
+                    <li>Featured editor window</li>
+                    <li>Full API suppport</li>
+                    <li>Quick wizard</li>
+                    <li>Straightfoward methods</li>
+                    <li>Source code provided</li>
+               </ul>
           </section>
 
 
@@ -54,7 +70,27 @@
 
           <section class="page_section" id="documentation">
                <h1>Documentation</h1>
-               <p>To use the toolkit, first install the asset via Unity Asset Store.</p>
+               <p>Step 0: Install and import the asset via <a href="http://u3d.as/1Szo">Unity Asset Store</a>.</p>
+               <p>Step 1: Bring up the editor window via Window > Yeahlowflicker > YF-Unity-Language-Toolkit > Main Editor.</p>
+               <img class="doc_image" src="../res/PRJ004/doc_step1.png"/>
+               <p>Step 2: Create a scene reference object via the editor window or Window > Yeahlowflicker > YF-Unity-Language-Toolkit > Create Reference Object.</p>
+               <img class="doc_image" src="../res/PRJ004/doc_step2.png"/>
+               <p>Step 3: Drag the reference object to the object field in the editor.</p>
+               <img class="doc_image" src="../res/PRJ004/doc_step3.png"/>
+               <p>Step 4: Add languages in the Languages tab of the editor. To add a language, click the + button.</p>
+               <img class="doc_image" src="../res/PRJ004/doc_step4.png"/>
+               <p>Step 5: Add items in the Items tab of the editor. To add an item, click the + button.</p>
+               <img class="doc_image" src="../res/PRJ004/doc_step5.png"/>
+               <p>Step 6: Edit the values of each item by clicking the Edit button in the Items tab of the editor.</p>
+               <img class="doc_image" src="../res/PRJ004/doc_step6.png"/>
+               <p>Step 7: In your scripts, call the reference object and get your desired values using the API.</p>
+               <p>Step 8: You are now good to go!</p>
+
+               <hr width="96%" align="right">
+
+               <p>Note 0: Users are always recommended to use the editor window to edit the values, and create reference objects via only the editor window or the Unity toolbar options. In simple words, we do not recommend dragging the scripts directly to custom-made GameObjects.</p>
+               <p>Note 1: To delete an item, hold shift key to activate the delete buttons.</p>
+               <p>Note 2: Please note that we have hidden the script on the reference object in order to prevent unnecessary errors.</p>
           </section>
 
 
@@ -77,54 +113,65 @@
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_0">instance</label>
-                    <hr width="92%">
+                    <hr width="96%" align="right">
                     <p class="api_item_desc">Singleton instance of language master. As long as reference object is present, communication with language master can be done by calling this instance property.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_1">AddItem (string name)</label>
-                    <hr width="92%">
+                    <hr width="96%" align="right">
                     <p class="api_item_desc">Add a new item to language master.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_2">AddLanguage (string langauge_name)</label>
-                    <hr width="92%">
+                    <hr width="96%" align="right">
                     <p class="api_item_desc">Add a new language to language master.</p>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_3">GetItem (string name, string language)</label>
-                    <hr width="92%">
+                    <hr width="96%" align="right">
                     <p class="api_item_desc">Return a value based on name and language.</p>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_4">RemoveLanguage (string langauge_name)</label>
-                    <hr width="92%">
+                    <hr width="96%" align="right">
                     <p class="api_item_desc">Remove a language from language master.</p>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_5">RenameLanguage (int index, string newName)</label>
-                    <hr width="92%">
+                    <hr width="96%" align="right">
                     <p class="api_item_desc">Rename a language from language master, using item index as identifier.</p>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_6">SetItem (string name, string language, string value)</label>
-                    <hr width="92%">
+                    <hr width="96%" align="right">
                     <p class="api_item_desc">Set the value of an item based on name and language.</p>
                </section>
 
           </section>
 
 
+
+          <section class="page_section" id="license">
+               <h1>License</h1>
+               <p>This project is licensed under the Unity Default License</p>
+               <p>By downloading the asset, it means that you understand and agree with the license.</p>
+               <p>The extension is published via the Unity Asset Store ONLY. You should not install/download the extension from external sources. We are NOT responsible for any situations happened due to installation of the extension via sources not officially approved by us.</p>
+          </section>
+
+
+
           <section class="page_section" id="links">
                <h1>Links</h1>
-               <a class="links" href="https://" target="_blank">Unity Asset Store Page</a>
+               <a class="links" href="http://u3d.as/1Szo" target="_blank">Download on Unity Asset Store</a>
+               <a class="links" href="https://unity3d.com/legal/as_terms?_ga=2.78839444.1075914444.1588816396-495167922.1576947098" target="_blank">Unity Default License</a>
           </section>
 
 
