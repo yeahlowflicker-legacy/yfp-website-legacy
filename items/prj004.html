@@ -33,8 +33,8 @@
 
 
 
-          <section class="image-slide">
-               <img src="../res/PRJ004/YFULT-0.png"></img>
+          <section class="main-image">
+               <img src="../res/PRJ004/YFULT-3.png"></img>
           </section>
 
 
@@ -70,7 +70,7 @@
 
           <section class="page_section" id="documentation">
                <h1>Documentation</h1>
-               <p>Step 0: Install and import the asset via <a href="http://u3d.as/1Szo">Unity Asset Store</a>.</p>
+               <p>Step 0: Download and import the asset via <a href="http://u3d.as/1Szo">Unity Asset Store</a>.</p>
                <p>Step 1: Bring up the editor window via Window > Yeahlowflicker > YF-Unity-Language-Toolkit > Main Editor.</p>
                <img class="doc_image" src="../res/PRJ004/doc_step1.png"/>
                <p>Step 2: Create a scene reference object via the editor window or Window > Yeahlowflicker > YF-Unity-Language-Toolkit > Create Reference Object.</p>
@@ -89,8 +89,10 @@
                <hr width="96%" align="right">
 
                <p>Note 0: Users are always recommended to use the editor window to edit the values, and create reference objects via only the editor window or the Unity toolbar options. In simple words, we do not recommend dragging the scripts directly to custom-made GameObjects.</p>
-               <p>Note 1: To delete an item, hold shift key to activate the delete buttons.</p>
-               <p>Note 2: Please note that we have hidden the script on the reference object in order to prevent unnecessary errors.</p>
+               <p>Note 1: Always keep ONE reference object in a scene ONLY. Otherwise the toolkit will have trouble finding the correct one.</p>
+               <p>Note 2: To use the methods, you must include <code>using Yeahlowflicker.Unity.LanguageToolkit;</code> in your scripts.</p>
+               <p>Note 3: To delete an item, hold shift key to activate the delete buttons.</p>
+               <p>Note 4: Please note that we have hidden the script on the reference object in order to prevent unnecessary errors.</p>
           </section>
 
 
@@ -115,6 +117,7 @@
                     <label class="api_item_title" id="api_item_0">instance</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Singleton instance of language master. As long as reference object is present, communication with language master can be done by calling this instance property.</p>
+                    <code class="api_code">YFLanguageMaster.instance.GetItem("hello_world", "en-us");</code>
                </section>
 
 
@@ -122,6 +125,7 @@
                     <label class="api_item_title" id="api_item_1">AddItem (string name)</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Add a new item to language master.</p>
+                    <code class="api_code">YFLanguageMaster.instance.AddItem("foo");</code>
                </section>
 
 
@@ -129,30 +133,35 @@
                     <label class="api_item_title" id="api_item_2">AddLanguage (string langauge_name)</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Add a new language to language master.</p>
+                    <code class="api_code">YFLanguageMaster.instance.AddLanguage("en-uk");</code>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_3">GetItem (string name, string language)</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Return a value based on name and language.</p>
+                    <code class="api_code">YFLanguageMaster.instance.GetItem("hello_world", "en-us");</code>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_4">RemoveLanguage (string langauge_name)</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Remove a language from language master.</p>
+                    <code class="api_code">YFLanguageMaster.instance.RemoveLanguage("en-uk");</code>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_5">RenameLanguage (int index, string newName)</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Rename a language from language master, using item index as identifier.</p>
+                    <code class="api_code">YFLanguageMaster.instance.GetItem(0, "en");</code>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_6">SetItem (string name, string language, string value)</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Set the value of an item based on name and language.</p>
+                    <code class="api_code">YFLanguageMaster.instance.SetItem("hello_world", "en-us", "Hello World!");</code>
                </section>
 
           </section>
@@ -162,8 +171,8 @@
           <section class="page_section" id="license">
                <h1>License</h1>
                <p>This project is licensed under the Unity Default License</p>
-               <p>By downloading the asset, it means that you understand and agree with the license.</p>
-               <p>The extension is published via the Unity Asset Store ONLY. You should not install/download the extension from external sources. We are NOT responsible for any situations happened due to installation of the extension via sources not officially approved by us.</p>
+               <p>By downloading the asset, you understand and agree with the license.</p>
+               <p>The extension is published via the Unity Asset Store ONLY. You should not install/download the extension from external sources. We are NOT responsible for any situations occured due to the use of the extension installed via unauthorized sources.</p>
           </section>
 
 
