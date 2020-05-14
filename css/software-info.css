@@ -1,7 +1,9 @@
 body
 {
      margin: 0;
-     background: white;
+     background: #121212;
+     color: #DEDEDE;
+     font-weight: lighter;
 }
 
 
@@ -13,7 +15,10 @@ ul
 }
 
 
-
+a
+{
+     color: #00AEB3;
+}
 
 
 
@@ -29,14 +34,16 @@ ul
 {
      padding-top: 75px;
      min-height: 87%;
+
+     background-color: #121212;
 }
 
 
 
 .page_title
 {
-     margin-top: 50px;
-     margin-left: 50px;
+     margin-top: 2.8%;
+     margin-left: 2.6%;
      display: inline-block;
 
      font-family: Sawasdee;
@@ -49,8 +56,8 @@ ul
 
 .uuid_label
 {
-     margin-top: 55px;
-     margin-right: 30px;
+     margin-top: 3.15%;
+     margin-right: 1.6%;
      float:right;
 
      font-family: Sawasdee;
@@ -63,18 +70,17 @@ ul
 
 .main-image
 {
-     margin-top: 40px;
+     margin-top: 2%;
      display: flex;
      justify-content: center;
-
-     background-color: black;
 }
+
 
 
 
 .content-youtube-video
 {
-     margin-left: 60px;
+     margin-left: 5%;
      margin-bottom: 80px;
 }
 
@@ -95,24 +101,12 @@ ul
 
 .links
 {
-     margin-left: 60px;
+     margin-left: 5%;
      display: flex;
      flex-direction: column;
 
      font-family: Arial;
-     color: #008B8F;
      font-size: 24px;
-     text-decoration: none;
-}
-
-
-
-.index_links a
-{
-     width: 20%;
-
-     font-size: 24px;
-     color: black;
      text-decoration: none;
 }
 
@@ -122,7 +116,7 @@ ul
 
 .page_section
 {
-     margin: 80px 300px 75px 300px;
+     margin: 4.5% 16% 4.5% 16%;
      display: flex;
      flex-direction: column;
 }
@@ -138,7 +132,7 @@ ul
 
 .page_section p
 {
-     margin-left: 60px;
+     margin-left: 5%;
      font-size: 24px;
 }
 
@@ -155,13 +149,12 @@ ul
 
 .api_item_index a
 {
-     margin-top: 10px;
-     margin-left: 60px;
+     margin-top: 0.8%;
+     margin-left: 5%;
 
      font-family: Lucida Console;
      font-size: 20px;
      font-weight: bold;
-     color: #008B8F;
      text-decoration: none;
 }
 
@@ -171,7 +164,7 @@ ul
 
 .api_item_container
 {
-     margin-top: 80px;
+     margin-top: 6.5%;
      display: flex;
      flex-direction: column;
 }
@@ -180,7 +173,7 @@ ul
 
 .api_item_title
 {
-     margin-left: 60px;
+     margin-left: 5%;
 
      font-family: sans-serif;
      font-size: 30px;
@@ -189,8 +182,8 @@ ul
 
 .api_item_desc
 {
-     margin-left: 120px;
-     margin-top: 20px;
+     margin-left: 10%;
+     margin-top: 1.5%;
 
      font-size: 24px;
 }
@@ -198,9 +191,27 @@ ul
 
 .api_code
 {
-     margin-left: 100px;
-     padding: 8px 15px 8px 15px;
+     margin: 1.5% 4% 1.5% 8%;
+     padding: 0.5% 1.25% 0.5% 1.25%;
 
      font-size: 18px;
-     background-color: #CAF0F1;
+     background-color: #242424;
+}
+
+
+.code-block
+{
+     margin: 0 8% 0 8%;
+     padding: 3%;
+     overflow: auto;
+
+
+     background-color: #202020;
+     font-size: 16px;
+}
+
+.code-block code
+{
+     cursor: text;
+     color: #DEDEDE;
 }

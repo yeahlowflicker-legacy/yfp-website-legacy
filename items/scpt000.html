@@ -1,0 +1,161 @@
+<html>
+
+<meta charset="UTF-8">
+
+<head>
+     <title>SCPT000 | YFP</title>
+     <link rel="stylesheet" href="../css/software-info.css">
+</head>
+
+
+
+<header>
+     <link rel="stylesheet" href="../css/navbar.css">
+     <nav class="navbar">
+          <img class="icon" src="../res/YFV4_transparent.png">
+          <h1 class="title">Yeahlowflicker Production</h1>
+
+          <a href="../about.html">About Us</a>
+          <a href="../scripts.html">Scripts</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../index.html">Home</a>
+     </nav>
+</header>
+
+
+
+
+<body>
+
+     <section class="page_wrapper">
+
+          <label class="page_title">SCRT000 | Linux Desktop Entry Generator</label>
+          <label class="uuid_label">SCRT000 | Script</label>
+
+
+
+          <section class="page_section">
+               <h1>Index</h1>
+               <a class="links" href="#introduction">Introduction</a>
+               <a class="links" href="#source-code">Source Code</a>
+               <a class="links" href="#license">License</a>
+               <a class="links" href="#links">Links</a>
+          </section>
+
+
+
+
+          <section class="page_section" id="introduction">
+               <h1>Introduction</h1>
+               <p>This is a Python script that generates desktop entries for applications in Linux systems.</p>
+               <p>To run the program, make sure to have Python 3 installed. Open terminal in the script directory and type the following command:</p>
+               <code class="api_code">python3 desktop-entry-generator.py</code>
+               <hr width="96%" align="right">
+               <p>Note #0: The program is tested with Python 3.8.</p>
+               <p>Note #1: The program only generates entries with application type. Other entry types are not supported.</p>
+               <p>Note #2: Generated files are placed at <i>home/.local/share/applications</i> .</p>
+          </section>
+
+
+
+
+          <section class="page_section" id="source-code">
+               <h1>Source Code</h1>
+               <pre class="code-block">
+                    <code>
+from os.path import exists
+from pathlib import Path
+
+
+def _name():
+    name = input("Enter application name: ")
+    if len(name) > 0:
+        return name
+    else:
+        print("ERROR: Name cannot be empty.")
+        _name()
+
+
+def _version():
+    return input("Enter application version (Skip by entering nothing): ")
+
+
+def _exec():
+    exec = input("Enter executable path (full path): ")
+    if exists(exec):
+        return exec
+    else:
+        print("ERROR: Path is invalid.")
+        return _exec()
+
+
+def _icon():
+    return input("Enter icon path (full path) (Skip by entering nothing): ")
+
+
+#   Main Program
+if __name__ == "__main__":
+
+    print("Yeahlowflicker Production")
+    print("PRJ007 | Linux Desktop Entry Generator")
+    print("Press any key to start...")
+    input()
+
+    name = _name()
+    version = _version()
+    exec_path = _exec()
+    icon = _icon()
+
+    print("Saving...")
+
+    path = str(Path.home()) + "/.local/share/applications/{}.desktop".format(name.replace(" ", "-"))
+
+    #   Save file
+    with open(path, 'a') as file:
+        file.write("[Desktop Entry]\n")
+        file.write("Type=Application\n")
+        file.write("Name={}\n".format(name))
+        file.write("Version={}\n".format(version))
+        file.write("Exec={}\n".format(exec_path))
+        file.write("Icon={}\n".format(icon))
+
+    print("File saved successfully at {}.".format(path))
+    print("Press any key to continue...")
+                    </code>
+               </pre>
+          </section>
+
+
+
+          <section class="page_section" id="license">
+               <h1>License</h1>
+               <p>This script is licensed under the MIT License.</p>
+          </section>
+
+
+
+
+          <section class="page_section" id="links">
+               <h1>Links</h1>
+               <a class="links" href="https://www.mit.edu/~amini/LICENSE.md" target="_blank">MIT License</a>
+          </section>
+
+
+     </section>
+
+</body>
+
+
+
+
+<link rel="stylesheet" href="../css/footer.css">
+<footer>
+     <a href="https://www.instagram.com/yeahlowflickerproduction" target="_blank">Instagram</a>
+     <a href="https://www.youtube.com/channel/UCyOZNX6yoHb-vBhthVBKzQg" target="_blank">YouTube</a>
+     <a href="https://www.github.com/YeahlowflickerProduction" target="_blank">GitHub</a>
+     <label>Copyright © 2020 Yeahlowflicker Production</label>
+</footer>
+
+
+
+</html>

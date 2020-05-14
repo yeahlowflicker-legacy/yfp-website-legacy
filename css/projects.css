@@ -1,7 +1,14 @@
 body
 {
      margin: 0;
-     background: white;
+     background: #121212;
+     color: #DEDEDE;
+}
+
+
+a
+{
+     color: #DEDEDE;
 }
 
 
@@ -15,8 +22,8 @@ body
 
 .page_title
 {
-     margin-top: 50px;
-     margin-left: 50px;
+     margin-top: 2.5%;
+     margin-left: 3%;
      display: inline-block;
 
      font-family: Sawasdee;
@@ -31,8 +38,8 @@ body
 
 .items
 {
-     margin-top: 50px;
-     margin-bottom: 150px;
+     margin-top: 2.5%;
+     margin-bottom: 7.5%;
 }
 
 
@@ -43,8 +50,8 @@ body
 {
      width: 90%;
      height: 150px;
-     padding-left: 20px;
-     margin-top: 25px;
+     padding-left: 1.25%;
+     margin-top: 1.5%;
      margin-left: auto;
      margin-right: auto;
 
@@ -52,7 +59,7 @@ body
      flex-direction: column;
      justify-content: center;
 
-     border: 1px solid black;
+     border: 2px solid #DEDEDE;
 }
 
 
@@ -61,7 +68,6 @@ body
 {
      font-size: 18px;
      font-family: Sawasdee;
-     color: black;
      text-decoration: none;
 }
 
@@ -69,12 +75,11 @@ body
 
 .item_title
 {
-     margin-top: 5px;
+     margin-top: 0.25%;
 
      font-size: 30px;
      font-family: Sawasdee;
      font-weight: bold;
-     color: black;
      text-decoration: none;
 }
 
@@ -82,7 +87,7 @@ body
 
 .item_description
 {
-     margin-top: 20px;
+     margin-top: 1%;
 
      font-family: Sawasdee;
      font-size: 24px;
