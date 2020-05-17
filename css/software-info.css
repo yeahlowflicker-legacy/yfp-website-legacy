@@ -1,3 +1,6 @@
+
+/* Mobile */
+
 body
 {
      margin: 0;
@@ -10,7 +13,7 @@ body
 
 ul
 {
-     margin-left: 60;
+     margin-left: 60px;
      font-size: 24px;
 }
 
@@ -30,21 +33,13 @@ a
 }
 
 
-.page_wrapper
-{
-     padding-top: 75px;
-     min-height: 87%;
-
-     background-color: #121212;
-}
-
 
 
 .page_title
 {
+     display: flex;
+     justify-content: center;
      margin-top: 2.8%;
-     margin-left: 2.6%;
-     display: inline-block;
 
      font-family: Sawasdee;
      font-size: 48px;
@@ -56,9 +51,9 @@ a
 
 .uuid_label
 {
-     margin-top: 3.15%;
-     margin-right: 1.6%;
-     float:right;
+     display: flex;
+     justify-content: center;
+     margin-top: 10px;
 
      font-family: Sawasdee;
      font-size: 30px;
@@ -70,9 +65,14 @@ a
 
 .main-image
 {
-     margin-top: 2%;
+     margin-top: 5%;
      display: flex;
      justify-content: center;
+}
+
+.main-image img
+{
+     width: 80%;
 }
 
 
@@ -80,6 +80,7 @@ a
 
 .content-youtube-video
 {
+     width: 100%;
      margin-left: 5%;
      margin-bottom: 80px;
 }
@@ -90,8 +91,9 @@ a
 .doc_image
 {
      margin-bottom: 50px;
-     margin-left: 80px;
-     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     width: 90%;
      height: auto;
 }
 
@@ -152,7 +154,7 @@ a
      margin-top: 0.8%;
      margin-left: 5%;
 
-     font-family: Lucida Console;
+     font-family: sans-serif;
      font-size: 20px;
      font-weight: bold;
      text-decoration: none;
@@ -214,4 +216,38 @@ a
 {
      cursor: text;
      color: #DEDEDE;
+}
+
+
+
+
+
+
+/* Desktop */
+@media only screen and (min-width: 950px)
+{
+     .page_title
+     {
+          display: inline-block;
+          margin-left: 2.6%;
+     }
+
+
+     .uuid_label
+     {
+          display: inline-block;
+          margin-top: 3.15%;
+          margin-right: 1.6%;
+          float:right;
+     }
+
+     .main-image
+     {
+          margin-top: 2%;
+     }
+
+     .main-image img
+     {
+          width: 50%;
+     }
 }

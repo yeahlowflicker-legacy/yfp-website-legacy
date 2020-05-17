@@ -5,6 +5,7 @@
 <head>
      <title>SCPT000 | YFP</title>
      <link rel="stylesheet" href="../css/software-info.css">
+     <link rel="stylesheet" href="../css/page.css">
 </head>
 
 
@@ -12,13 +13,17 @@
 <header>
      <link rel="stylesheet" href="../css/navbar.css">
      <nav class="navbar">
-          <img class="icon" src="../res/YFV4_transparent.png">
-          <h1 class="title">Yeahlowflicker Production</h1>
+          <section class="logo">
+               <img src="../res/YFV4_transparent.png">
+               <h1>Yeahlowflicker Production</h1>
+          </section>
 
-          <a href="../about.html">About Us</a>
-          <a href="../scripts.html">Scripts</a>
-          <a href="../projects.html">Projects</a>
-          <a href="../index.html">Home</a>
+          <section class="navbar-links">
+               <a href="../about.html">About Us</a>
+               <a href="../scripts.html">Scripts</a>
+               <a href="../projects.html">Projects</a>
+               <a href="../index.html">Home</a>
+          </section>
      </nav>
 </header>
 
@@ -29,14 +34,16 @@
 
      <section class="page_wrapper">
 
-          <label class="page_title">SCRT000 | Linux Desktop Entry Generator</label>
-          <label class="uuid_label">SCRT000 | Script</label>
+          <div class="top-placeholder"></div>
+          <label class="page_title">Linux Desktop Entry Generator</label>
+          <label class="uuid_label">SCPT000 | Script</label>
 
 
 
           <section class="page_section">
                <h1>Index</h1>
                <a class="links" href="#introduction">Introduction</a>
+               <a class="links" href="#api_code">API Reference</a>
                <a class="links" href="#source-code">Source Code</a>
                <a class="links" href="#license">License</a>
                <a class="links" href="#links">Links</a>
@@ -47,8 +54,9 @@
 
           <section class="page_section" id="introduction">
                <h1>Introduction</h1>
+               <img class="doc_image" src="../res/SCPT000/scpt000-demo.png">
                <p>This is a Python script that generates desktop entries for applications in Linux systems.</p>
-               <p>To run the program, make sure to have Python 3 installed. Open terminal in the script directory and type the following command:</p>
+               <p>To run the program, make sure to have Python 3 installed. Open terminal/cmd in the script directory and type the following command:</p>
                <code class="api_code">python3 desktop-entry-generator.py</code>
                <hr width="96%" align="right">
                <p>Note #0: The program is tested with Python 3.8.</p>
@@ -59,16 +67,58 @@
 
 
 
+          <section class="page_section" id="api_ref">
+
+               <h1>API Reference</h1>
+
+               <section class="api_item_index">
+                    <a href="#api_item_0">_name()</a>
+                    <a href="#api_item_1">_version()</a>
+                    <a href="#api_item_2">_exec()</a>
+                    <a href="#api_item_3">_icon()</a>
+               </section>
+
+
+
+               <section class="api_item_container">
+                    <label class="api_item_title" id="api_item_0">_name()</label>
+                    <hr width="96%" align="right">
+                    <p class="api_item_desc">Take the name of the application from user input. This field is required. If the input is invalid (i.e. empty), it calls itself again.</p>
+               </section>
+
+
+               <section class="api_item_container">
+                    <label class="api_item_title" id="api_item_1">_version()</label>
+                    <hr width="96%" align="right">
+                    <p class="api_item_desc">Take the version of the application from user input.</p>
+               </section>
+
+
+               <section class="api_item_container">
+                    <label class="api_item_title" id="api_item_2">_exec()</label>
+                    <hr width="96%" align="right">
+                    <p class="api_item_desc">Take the path of the executable from user input. This field is required. If the input path is invalid, it calls itself again.</p>
+               </section>
+
+               <section class="api_item_container">
+                    <label class="api_item_title" id="api_item_3">_icon()</label>
+                    <hr width="96%" align="right">
+                    <p class="api_item_desc">Take the path of the icon of the application.</p>
+               </section>
+
+          </section>
+
+
+
           <section class="page_section" id="source-code">
                <h1>Source Code</h1>
                <pre class="code-block">
                     <code>
-from os.path import exists
-from pathlib import Path
+from os.path import exists, expanduser
 
 
 def _name():
-    name = input("Enter application name: ")
+    name = raw_input("Enter application name: ")
     if len(name) > 0:
         return name
     else:
@@ -76,42 +126,46 @@ def _name():
         _name()
 
 
+
 def _version():
-    return input("Enter application version (Skip by entering nothing): ")
+    return raw_input("Enter application version (Skip by entering nothing): ")
+
 
 
 def _exec():
-    exec = input("Enter executable path (full path): ")
-    if exists(exec):
-        return exec
+    path = raw_input("Enter executable path (full path): ")
+    if exists(path):
+        return path
     else:
         print("ERROR: Path is invalid.")
         return _exec()
 
 
 def _icon():
-    return input("Enter icon path (full path) (Skip by entering nothing): ")
+    return raw_input("Enter icon path (full path) (Skip by entering nothing): ")
+
 
 
 #   Main Program
 if __name__ == "__main__":
 
     print("Yeahlowflicker Production")
-    print("PRJ007 | Linux Desktop Entry Generator")
-    print("Press any key to start...")
-    input()
+    print("SCPT000 - Linux Desktop Entry Generator")
+    raw_input("Press any key to start...")
+
 
     name = _name()
     version = _version()
     exec_path = _exec()
     icon = _icon()
 
+
     print("Saving...")
 
-    path = str(Path.home()) + "/.local/share/applications/{}.desktop".format(name.replace(" ", "-"))
+    dirpath = expanduser("~") + "/.local/share/applications/{}.desktop".format(name.replace(" ", "-"))
 
     #   Save file
-    with open(path, 'a') as file:
+    with open(dirpath, 'a') as file:
         file.write("[Desktop Entry]\n")
         file.write("Type=Application\n")
         file.write("Name={}\n".format(name))
@@ -119,11 +173,12 @@ if __name__ == "__main__":
         file.write("Exec={}\n".format(exec_path))
         file.write("Icon={}\n".format(icon))
 
-    print("File saved successfully at {}.".format(path))
-    print("Press any key to continue...")
+    print("File saved successfully at {}.".format(dirpath))
+    raw_input("Press any key to exit...")
                     </code>
                </pre>
           </section>
+
 
 
 
@@ -137,6 +192,7 @@ if __name__ == "__main__":
 
           <section class="page_section" id="links">
                <h1>Links</h1>
+               <a class="links" href="https://www.python.org/downloads/" target="_blank">Download Python</a>
                <a class="links" href="https://www.mit.edu/~amini/LICENSE.md" target="_blank">MIT License</a>
           </section>
 
@@ -150,9 +206,11 @@ if __name__ == "__main__":
 
 <link rel="stylesheet" href="../css/footer.css">
 <footer>
-     <a href="https://www.instagram.com/yeahlowflickerproduction" target="_blank">Instagram</a>
-     <a href="https://www.youtube.com/channel/UCyOZNX6yoHb-vBhthVBKzQg" target="_blank">YouTube</a>
-     <a href="https://www.github.com/YeahlowflickerProduction" target="_blank">GitHub</a>
+     <section class="footer-links">
+          <a href="https://www.instagram.com/yeahlowflickerproduction" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/channel/UCyOZNX6yoHb-vBhthVBKzQg" target="_blank">YouTube</a>
+          <a href="https://www.github.com/YeahlowflickerProduction" target="_blank">GitHub</a>
+     </section>
      <label>Copyright © 2020 Yeahlowflicker Production</label>
 </footer>
 

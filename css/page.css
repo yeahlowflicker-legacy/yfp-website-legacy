@@ -1,0 +1,32 @@
+
+
+/* Mobile */
+
+.page_wrapper
+{
+     padding-top: 100px;
+     min-height: 87%;
+
+     background-color: #121212;
+}
+
+
+.top-placeholder
+{
+     height: 50px;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 950px)
+{
+     .page_wrapper
+     {
+          padding-top: 75px;
+     }
+
+     .top-placeholder
+     {
+          height: 0;
+     }
+}
