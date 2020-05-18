@@ -83,8 +83,8 @@
                     <a href="#api_item_1">num</a>
                     <a href="#api_item_2">smallChar</a>
                     <a href="#api_item_3">capChar</a>
-                    <a href="#api_item_4">result</a>
-                    <a href="#api_item_5">punc</a>
+                    <a href="#api_item_4">punc</a>
+                    <a href="#api_item_5">result</a>
                     <a href="#api_item_6">generate()</a>
                     <a href="#api_item_7">genType()</a>
                     <a href="#api_item_8">genChar()</a>
@@ -114,17 +114,20 @@
                     <p class="api_item_desc">Whether small characters are included in the password.</p>
                </section>
 
+
                <section class="api_item_container">
-                    <label class="api_item_title" id="api_item_3">punc</label>
+                    <label class="api_item_title" id="api_item_3">capChar</label>
+                    <hr width="96%" align="right">
+                    <p class="api_item_desc">Whether capitalized characters are included in the password.</p>
+               </section>
+
+
+               <section class="api_item_container">
+                    <label class="api_item_title" id="api_item_4">punc</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Whether punctuations are included in the password.</p>
                </section>
 
-               <section class="api_item_container">
-                    <label class="api_item_title" id="api_item_4">capChar</label>
-                    <hr width="96%" align="right">
-                    <p class="api_item_desc">Whether capitalized characters are included in the password.</p>
-               </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_5">result</label>
@@ -132,11 +135,13 @@
                     <p class="api_item_desc">The generated password result.</p>
                </section>
 
+
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_6">generate()</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Main generation method. Calls genChar() repeatedly according to length.</p>
                </section>
+
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_7">genType(num, smallChar, capChar, punc)</label>
@@ -144,17 +149,20 @@
                     <p class="api_item_desc">Randomly pick the type of the next character to be generated. If the picked type does not meet the requirements, it will be re-generated.</p>
                </section>
 
+
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_8">genChar(type)</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Randomly generate a character based on the selected type. The generated character is then added to the result string.</p>
                </section>
 
+
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_9">checking()</label>
                     <hr width="96%" align="right">
                     <p class="api_item_desc">Perform checking on the result to see if all of the requirements are included in the password. If not, a random character in the password will be replaced by a new generated character and the checking() method will be called again until the password meets all the requirements.</p>
                </section>
+
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_9">menu()</label>
