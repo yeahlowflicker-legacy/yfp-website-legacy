@@ -1,8 +1,8 @@
 var html = '\
           <link rel="stylesheet" href="/css/navbar.css">\
           <section class="logo">\
-               <img src="/res/YFV4_transparent.png">\
-               <h1>Yeahlowflicker Production</h1>\
+               <a href="/index.html"><img src="/res/YFV4_transparent.png"></a>\
+               <a href="/index.html"><h1>Yeahlowflicker Production</h1></a>\
           </section>\
           \
           <section class="navbar-links">\
