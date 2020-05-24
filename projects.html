@@ -1,30 +1,22 @@
 <html>
 
-<meta charset="UTF-8">
+<meta charset="UTF-8" content="no-cache, no-store, must-revalidate">
+
 
 <head>
      <title>Projects | YFP</title>
-     <link rel="stylesheet" href="./css/projects.css">
-     <link rel="stylesheet" href="./css/page.css">
+     <link rel="icon" href="/res/YFV4_transparent.png">
+     <link rel="stylesheet" href="/css/projects.css">
+     <link rel="stylesheet" href="/css/page.css">
 </head>
 
 
-<header>
-     <link rel="stylesheet" href="./css/navbar.css">
-     <nav class="navbar">
-          <section class="logo">
-               <img src="./res/YFV4_transparent.png">
-               <h1>Yeahlowflicker Production</h1>
-          </section>
 
-          <section class="navbar-links">
-               <a href="about.html">About Us</a>
-               <a href="scripts.html">Scripts</a>
-               <a href="projects.html">Projects</a>
-               <a href="index.html">Home</a>
-          </section>
-     </nav>
+<header>
+     <nav id="navbar"></nav>
+     <script src="/js/navbar.js"></script>
 </header>
+
 
 
 
@@ -38,18 +30,18 @@
 
           <ul class="items">
                <li>
-                    <a class="item_id" href="./items/prj000.html">PRJ000</a>
-                    <a class="item_title" href="./items/prj000.html">Simple Text Editor</a>
+                    <a class="item_id" href="/items/prj000.html">PRJ000</a>
+                    <a class="item_title" href="/items/prj000.html">Simple Text Editor</a>
                     <label class="item_description">A simple text editor made with Qt/QML and PySide2.</label>
                </li>
                <li>
-                    <a class="item_id" href="./items/prj001.html">PRJ001</a>
-                    <a class="item_title" href="./items/prj001.html">Productivity Clock</a>
+                    <a class="item_id" href="/items/prj001.html">PRJ001</a>
+                    <a class="item_title" href="/items/prj001.html">Productivity Clock</a>
                     <label class="item_description">A configurable, auto-looping countdown clock to boost productivity, made with Qt/QML and Pyside2.</label>
                </li>
                <li>
-                    <a class="item_id" href="./items/prj004.html">SFW000 | PRJ004</a>
-                    <a class="item_title" href="./items/prj004.html">Unity | Language Toolkit</a>
+                    <a class="item_id" href="/items/prj004.html">SFW000 | PRJ004</a>
+                    <a class="item_title" href="/items/prj004.html">Unity | Language Toolkit</a>
                     <label class="item_description">Language toolkit for Unity Engine.</label>
                </li>
           </ul>
@@ -59,15 +51,8 @@
 </body>
 
 
-<link rel="stylesheet" href="./css/footer.css">
-<footer>
-     <section class="footer-links">
-          <a href="https://www.instagram.com/yeahlowflickerproduction" target="_blank">Instagram</a>
-          <a href="https://www.youtube.com/channel/UCyOZNX6yoHb-vBhthVBKzQg" target="_blank">YouTube</a>
-          <a href="https://www.github.com/YeahlowflickerProduction" target="_blank">GitHub</a>
-     </section>
-     <label>Copyright © 2020 Yeahlowflicker Production</label>
-</footer>
+<footer id="footer"></footer>
+<script src="/js/footer.js"></script>
 
 
 </html>

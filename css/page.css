@@ -2,10 +2,21 @@
 
 /* Mobile */
 
+
+
+body
+{
+     margin: 0;
+     background: #121212;
+     color: #DEDEDE;
+}
+
+
+
 .page_wrapper
 {
      padding-top: 100px;
-     min-height: 87%;
+     min-height: 88.2%;
 
      background-color: #121212;
 }
@@ -17,12 +28,25 @@
 }
 
 
+.page_title
+{
+     margin-top: 2.5%;
+     margin-left: 3%;
+     display: inline-block;
+
+     font-family: Sawasdee;
+     font-size: 54px;
+     font-weight: 400;
+}
+
+
+
 /* Desktop */
 @media only screen and (min-width: 950px)
 {
      .page_wrapper
      {
-          padding-top: 75px;
+          padding-top: 60px;
      }
 
      .top-placeholder
