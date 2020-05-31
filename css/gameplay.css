@@ -1,0 +1,55 @@
+
+
+.cover
+{
+    width: 100%;
+    margin: 3% 0;
+}
+
+
+
+#play-button
+{
+    display: flex;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 20%;
+    padding: 15px 20px 0 20px;
+    z-index: 1;
+
+    color: black;
+    font-family: Sawasdee;
+    font-size: 72px;
+    text-decoration: none;
+    border: 3px solid black;
+}
+
+
+
+#unityContainer
+{
+    min-width: 41%;
+    min-height: 800px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+
+.game-description
+{
+    margin-left: 20%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.game-description a
+{
+    margin-top: 10%;
+    margin-left: 5%;
+
+    font-family: sans-serif;
+    font-size: 20px;
+}

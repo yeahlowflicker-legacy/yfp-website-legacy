@@ -7,6 +7,7 @@ body
      background: #121212;
      color: #DEDEDE;
      font-weight: lighter;
+     font-family: Ubuntu;
 }
 
 
@@ -121,6 +122,9 @@ a
      margin: 4.5% 16% 4.5% 16%;
      display: flex;
      flex-direction: column;
+     padding: 1% 5% 3% 5%;
+
+     background-color: #181818;
 }
 
 

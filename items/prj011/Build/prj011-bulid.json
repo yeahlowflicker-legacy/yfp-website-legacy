@@ -1,0 +1,16 @@
+{
+"companyName": "YeahlowflickerProduction",
+"productName": "PRJ011-Glomium-FlappyBird",
+"productVersion": "2020.e.2",
+"dataUrl": "prj011-bulid.data.unityweb",
+"wasmCodeUrl": "prj011-bulid.wasm.code.unityweb",
+"wasmFrameworkUrl": "prj011-bulid.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
