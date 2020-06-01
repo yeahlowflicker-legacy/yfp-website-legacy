@@ -57,7 +57,7 @@ a
 .item_id
 {
      font-size: 18px;
-     font-family: Ubuntu;
+     font-family: OpenSans;
      font-weight: lighter;
      text-decoration: none;
 }
@@ -69,7 +69,7 @@ a
      margin-top: 0.25%;
 
      font-size: 30px;
-     font-family: Sawasdee;
+     font-family: OpenSans;
      font-weight: bold;
      text-decoration: none;
 }
@@ -80,7 +80,7 @@ a
 {
      margin-top: 1%;
 
-     font-family: Ubuntu;
+     font-family: goldbill;
      font-weight: lighter;
      font-size: 24px;
 }

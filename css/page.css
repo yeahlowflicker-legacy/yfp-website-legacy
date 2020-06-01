@@ -3,6 +3,20 @@
 /* Mobile */
 
 
+@font-face
+{
+     font-family: "OpenSans";
+     src: url(/res/OpenSans-Light.ttf);
+}
+
+
+@font-face
+{
+     font-family: "goldbill";
+     src: url(/res/Cabrion.otf);
+}
+
+
 
 body
 {
@@ -34,7 +48,7 @@ body
      margin-left: 3%;
      display: inline-block;
 
-     font-family: Sawasdee;
+     font-family: cabrion;
      font-size: 54px;
      font-weight: 400;
 }
