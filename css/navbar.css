@@ -37,11 +37,11 @@
 .logo h1
 {
      color: white;
-     font-family: Sawasdee;
+     font-family: OpenSans;
      font-weight: lighter;
      font-size: 34px;
      float: left;
-     margin-top: 22px;
+     margin-top: 15px;
      margin-left: 15px;
 }
 
@@ -60,12 +60,13 @@
 .navbar-links a
 {
      display: inline-block;
+
+     margin-top: -25px;
      margin-left: auto;
      margin-right: auto;
-     margin-top: -20px;
 
      color: white;
-     font-family: Sawasdee;
+     font-family: OpenSans;
      font-size: 24px;
      text-decoration: none;
 }
@@ -97,7 +98,7 @@
           display: inline-block;
           overflow: visible;
           margin-right: 20px;
-          margin-top: 20px;
+          margin-top: 15px;
      }
 
 
@@ -119,10 +120,9 @@
      .logo h1
      {
           color: white;
-          font-family: Sawasdee;
           font-weight: lighter;
           font-size: 30px;
           float: left;
-          margin-top: 16px;
+          margin-top: 10px;
      }
 }
