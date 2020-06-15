@@ -21,8 +21,8 @@
 body
 {
      margin: 0;
-     background: #121212;
-     color: #DEDEDE;
+     background: #ffffff;
+     color: #000000;
 }
 
 
@@ -32,7 +32,7 @@ body
      padding-top: 100px;
      min-height: 88.2%;
 
-     background-color: #121212;
+     background-color: #ffffff;
 }
 
 
