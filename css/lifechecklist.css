@@ -1,0 +1,232 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+hr {
+    width: 80%;
+    align-content: center;
+}
+
+
+.main {
+    padding: 10% 0;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    background-color: #5cff5c;
+}
+
+
+.main h1 {
+    margin-bottom: 1%;
+    font: 60px bolder;
+    animation: drop 1.5s;
+}
+
+
+
+.main h2 {
+    margin: 1% 0;
+    font: 48px bolder;
+    animation: drop 1.5s;
+}
+
+
+
+#top-google {
+    width: 15%;
+    margin: 5% auto 0 auto;
+
+    user-select: none;
+    animation: drop 1.5s;
+    transition: 0.25s;
+}
+
+
+#top-google:hover {
+    width: 18%;
+}
+
+
+#top-down-arrow {
+    width: 3%;
+    margin: 7% auto 0 auto;
+
+    animation: drop 1.5s;
+}
+
+
+#top-down-arrow img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.intro {
+    margin: 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    animation: drop 1.5s;
+}
+
+.intro img {
+    width: 25%;
+    margin: 0 auto;
+}
+
+
+.intro-left, .intro-right {
+    width: 30%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: left;
+}
+
+.intro h1 {
+    margin-bottom: 2%;
+    font-size: 36px;
+}
+
+
+.intro p {
+    margin-top: 2%;
+    font-size: 28px;
+}
+
+
+
+
+
+
+
+.desc {
+    padding: 5% 0;
+
+    text-align: center;
+}
+
+
+.short-desc {
+    margin: 2% 0 8% 0;
+}
+
+
+.short-desc h1 {
+    font: 54px bold;
+}
+
+
+.short-desc p {
+    font-size: 30px;
+}
+
+
+
+.desc-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    text-align: left;
+    font-size: 30px;
+
+    animation: drop 1.5s;
+}
+
+
+.desc-section h1 {
+    font-size: 54px;
+    font-weight: 500;
+}
+
+
+
+
+.desc-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.desc-section img {
+    width: 20%;
+    margin: 5% 0;
+    
+    border: 1px solid black;
+}
+
+
+
+#img-0, #img-2 {
+    margin-right: 10%;
+}
+
+
+#img-1 {
+    margin-left: 10%;
+}
+
+
+
+
+
+
+
+.links {
+    margin: 2% 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.links h1 {
+    font-size: 54px;
+    font-weight: 500;
+}
+
+
+.links img {
+    width: 18%;
+    margin: 0 auto;
+
+    transition: 0.15s;
+}
+
+.links img:hover {
+    width: 20%;
+}
+
+
+
+
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

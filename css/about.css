@@ -6,3 +6,45 @@ p
      font-family: goldbill;
      font-weight: lighter;
 }
+
+
+
+
+
+
+.creator {
+     position: relative;
+
+     color: white;
+     text-align: center;
+     font-family: OpenSans;
+}
+
+
+.creator img {
+     user-select: none;
+}
+
+
+.creator div {
+     position: absolute;
+     top: 25%;
+}
+
+
+.creator h1 {
+     font-size: 36px;
+}
+
+
+.creator h2 {
+     font-size: 24px;
+}
+
+
+.creator p {
+     font-size: 30px;
+     font-weight: 500;
+}
+
+

@@ -6,7 +6,7 @@ var html = '\
                     <a href="https://www.youtube.com/channel/UCyOZNX6yoHb-vBhthVBKzQg" target="_blank">YouTube</a>\
                     <a href="https://www.github.com/YeahlowflickerProduction" target="_blank">GitHub</a>\
                </section>\
-               <label>Copyright © 2020 Yeahlowflicker Production</label>\
+               <label>© 2020 Yeahlowflicker Production</label>\
           </footer>';
 
 
