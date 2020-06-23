@@ -1,8 +1,9 @@
 
-/* Mobile */
+/* Desktop */
 
 body {
      margin: 0;
+     padding: 0;
      background: #121212;
      color: #b1b1b1;
      font: 24px lighter OpenSans;
@@ -17,24 +18,22 @@ a {
 
 
 hr {
-     width: 100%;
+     width: 85%;
      text-align: center;
 }
 
 
-.page_wrapper {
+.page-wrapper {
      min-height: 87%;
-     padding: 75px 10%;
 }
-
 
 
 
 .main {
+     position: relative;
      color: white;
      text-align: center;
      font-family: OpenSans;
-     overflow: hidden;
 }
 
 
@@ -152,6 +151,7 @@ hr {
      height: 60%;
      display: inline-block;
      z-index: 1;
+     margin-top: 3%;
      margin-bottom: 5%;
 
      background-color: #f0f0f0;
@@ -229,7 +229,7 @@ hr {
 
 
 .latest h1 {
-     margin-left: 4%;
+     margin-left: 10%;
 
      font-size: 48px;
      font-weight: 500;
@@ -242,6 +242,8 @@ hr {
 
 
 .latest ul {
+     margin: 0 10%;
+
      display: flex;
      flex-direction: row;
      justify-content: center;
@@ -264,9 +266,10 @@ hr {
      transform: translateY(-25px);
 }
 
+
 .latest a {
      height: 500px;
-     padding: 0 0 0 5%;
+     padding: 0 5%;
 
      display: flex;
      flex-direction: column;
@@ -279,32 +282,36 @@ hr {
 
 
 
-.details
-{
-     margin: 5% 0;
-     padding: 5% 5%;
-     z-index: 1;
-     display: flex;
-     flex-direction: column;
+.section-block {
+     position: relative;
 
-     background-color: #ffffff;
-     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+     color: white;
+     font-size: 30px;
 }
 
 
-.details h1
-{
+.section-block img {
+     width: 100%;
+     overflow: hidden;
+}
+
+
+.section-block div {
+     width: 30%;
+     position: absolute;
+     top: 40%;
+}
+
+
+.section-block h1 {
      margin: 0.5% 0;
-     font-size: 40px;
+     font-size: 54px;
      font-weight: 500;
 }
 
 
-
-.details a
-{
+.section-block a {
      margin-top: 5%;
-     margin-right: auto;
      display: inline-block;
      padding: 1.2% 1.5% 0.8% 1.5%;
 
@@ -316,15 +323,27 @@ hr {
 
 
 
-.details a:hover
+.section-block a:hover
 {
      background-color: #007dd1;
 }
 
 
+#open-source, #extensions {
+     left: 10%;
+}
 
 
-/* Desktop */
+#scripts {
+     left: 60%;
+}
+
+
+
+
+
+
+/* Mobile */
 @media only screen and (max-width: 950px)
 {
      .featured {
@@ -345,7 +364,11 @@ hr {
      }
 
      .intro {
-          height: 230%;
+          height: 190%;
+     }
+
+     .intro h1 {
+          font-size: 28px;
      }
 
      .intro ul {
@@ -368,13 +391,24 @@ hr {
           margin: 5% 0;
      }
 
-     .details {
-          justify-content: center;
-          text-align: center;
+     .section-block img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow: hidden;
      }
-     
-     .details a {
-          margin: 10% auto 0 auto;
-          padding: 5% 5% 3% 5%; 
+
+     .section-block div {
+          width: 80%;
+          margin: 0 auto;
+     }
+
+     .section-block a {
+          padding: 3.5% 5% 2% 5%;
+     }
+
+     #extensions, #open-source, #scripts {
+          left: 0;
+          right: 0;
      }
 }
