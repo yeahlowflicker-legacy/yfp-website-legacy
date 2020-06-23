@@ -3,7 +3,7 @@
 /* Mobile */
 #navbar
 {
-     z-index: 1;
+     z-index: 10;
      position: fixed;
      width: 100%;
      height: 90px;
@@ -79,6 +79,42 @@
 .navbar-links a:hover
 {
      border-bottom: 4px solid white;
+}
+
+
+
+#sideNav-btn {
+     background-image: url("/res/nav-hamburger.png")
+}
+
+#sideNav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+     overflow-x: hidden;
+     background-color: black;
+     transition: 0.25s;
+}
+
+#sideNav a {
+     margin: 2% auto 2% 0;
+     padding-left: 10%;
+
+     font-size: 30px;
+     text-decoration: none;
+     cursor: pointer;
+     color: white;
+     transition: 0.15s;
+}
+
+#sideNav a:hover {
+     border-left: 15px solid white;
 }
 
 
