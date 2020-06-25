@@ -12,16 +12,7 @@ var html = '\
                <a href="/projects.html">Projects</a>\
                <a href="/products.html">Products</a>\
                <a href="/index.html">Home</a>\
-          </section>\
-          \
-          <div id="sideNav">\
-               <a href="/index.html">Home</a>\
-               <a href="/products.html">Products</a>\
-               <a href="/projects.html">Projects</a>\
-               <a href="/scripts.html">Scripts</a>\
-               <a href="/about.html">About Us</a>\
-               <br><br><br><br><br><a onclick="openNav()">X</a>\
-          </div>';
+          </section>';
 
 
 document.getElementById("navbar").innerHTML = html;
