@@ -138,7 +138,7 @@ hr {
 .featured img {
      float: right;
      width: 20%;
-     margin: auto;
+     margin: auto 10% auto auto;
 
      user-select: none;
 }
@@ -151,11 +151,12 @@ hr {
 
 .intro {
      width: 100%;
-     height: 60%;
-     display: inline-block;
-     z-index: 1;
-     margin-top: 3%;
-     margin-bottom: 5%;
+     height: 40%;
+     padding: 2% 0;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
 
      background-color: #f0f0f0;
      color: black;
@@ -163,10 +164,8 @@ hr {
 
 .intro h1 {
      width: 100%;
-     margin-top: 5%;
 
      display: inline-block;
-     z-index: inherit;
 
      font-size: 35px;
      font-weight: 500;
@@ -175,20 +174,18 @@ hr {
 }
 
 .intro ul {
-     height: 5%;
      display: flex;
      flex-direction: row;
      justify-content: center;
-     margin-top: 100px;
-     z-index: inherit;
 }
 
 .intro li {
-     width: 250px;
-     z-index: inherit;
+     margin: 0 2%;
 
      display: flex;
      flex-direction: column;
+
+     text-align: center;
      transition: 0.15s;
 }
 
@@ -197,21 +194,18 @@ hr {
 }
 
 .intro img {
-     width: 150px;
-     height: 150px;
+     width: 100px;
+     height: 100px;
      margin: auto;
-     z-index: inherit;
 
      user-select: none;
 }
 
 .intro label {
-     width: inherit;
      margin-top: 30px;
-     z-index: inherit;
 
      font-weight: 500;
-     font-size: 24px;
+     font-size: 20px;
      text-align: center;
      user-select: none;
 }
@@ -343,6 +337,11 @@ hr {
           object-fit: cover;
           overflow: hidden;
      }
+
+
+
+
+
      
      .featured {
           height: 1300px;
@@ -352,6 +351,7 @@ hr {
      .featured div {
           margin: 10% auto 0 auto;
           top: 0;
+          left: 0;
      }
 
      .featured h2 {
@@ -365,11 +365,19 @@ hr {
 
      .featured img {
           width: 350px;
-          margin-top: 400px;
+          margin: 500px auto 0 auto;
      }
 
+
+
+
+
+
      .intro {
-          height: 250%;
+          height: 160%;
+          padding: 5% 0;
+
+          text-align: center;
      }
 
      .intro h1 {
@@ -377,17 +385,32 @@ hr {
      }
 
      .intro ul {
+          padding: 0;
+
           display: flex;
           flex-direction: column;
-          margin-top: 700px;
      }
 
      .intro li {
-          margin: 0 auto;
-          margin-top: 100px;
+          margin: 5% auto;
      }
 
+     .intro img {
+          width: 150px;
+          height: 150px;
+     }
+
+     .intro label {
+          font-size: 24px;
+     }
+
+
+
+
+
+
      .latest ul {
+          padding: 0;
           flex-direction: column;
      }
 
@@ -396,7 +419,12 @@ hr {
           margin: 5% 0;
      }
 
-     .section-block img{
+
+
+
+
+
+     .section-block img {
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -406,10 +434,16 @@ hr {
      .section-block div {
           width: 80%;
           margin: 0 auto;
+
+          font-size: 24px;
+     }
+
+     .section-block h1 {
+          font-size: 40px;
      }
 
      .section-block a {
-          padding: 3.5% 5% 2% 5%;
+          padding: 3.5% 5% 3% 5%;
      }
 
      #extensions, #open-source, #scripts {

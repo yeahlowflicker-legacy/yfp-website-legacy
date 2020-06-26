@@ -11,11 +11,10 @@ footer
 
 
 
-footer label
-{
+footer label {
      display: flex;
      justify-content: center;
-     margin-top: 22px;
+     margin: 10px 0;
 
      font-family: OpenSans;
      font-size: 20px;
@@ -33,18 +32,23 @@ footer label
 
 
 
-.footer-links a
-{
-     display: inline-block;
+.footer-links a {
+     padding: 1% 0;
      margin-top: 12px;
      margin-left: 20px;
      margin-right: 20px;
 
+     display: inline-block;
 
      font-family: OpenSans;
      font-size: 20px;
      color: white;
      text-decoration: none;
+     transition: 0.15s;
+}
+
+.footer-links a:hover {
+     border-bottom: 3px solid white;
 }
 
 
