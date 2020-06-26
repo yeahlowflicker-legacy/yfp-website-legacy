@@ -127,7 +127,7 @@ hr {
      padding: 1.5% 2% 1% 2%;
 
      background-color: #0099ff;
-     color: #ffffff;
+     color: white;
      font-weight: bold;     
 }
 
@@ -350,8 +350,9 @@ hr {
 
      .featured div {
           margin: 10% auto 0 auto;
+          padding: 0;
           top: 0;
-          left: 0;
+          position: static;
      }
 
      .featured h2 {
@@ -365,7 +366,7 @@ hr {
 
      .featured img {
           width: 350px;
-          margin: 500px auto 0 auto;
+          margin: 100px auto 0 auto;
      }
 
 
@@ -374,8 +375,8 @@ hr {
 
 
      .intro {
-          height: 160%;
-          padding: 5% 0;
+          height: 1500px;
+          padding-top: 10%;
 
           text-align: center;
      }
