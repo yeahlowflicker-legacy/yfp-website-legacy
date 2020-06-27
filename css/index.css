@@ -97,7 +97,7 @@ hr {
      flex-direction: column;
 
      overflow: hidden;
-     background-color: #5cff5c;
+     background-color: #50e01b;
 }
 
 .featured div {
@@ -160,7 +160,6 @@ hr {
      flex-direction: column;
      justify-content: center;
 
-     background-color: #f0f0f0;
      color: black;
 }
 

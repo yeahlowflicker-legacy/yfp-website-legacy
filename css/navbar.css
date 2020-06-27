@@ -1,12 +1,12 @@
 
 
 /* Mobile */
-#navbar
-{
+#navbar {
      z-index: 10;
-     position: fixed;
      width: 100%;
      height: 90px;
+     position: fixed;
+
      display: flex;
      flex-direction: column;
 
@@ -17,54 +17,51 @@
 
 
 
-.logo
-{
+.logo {
+     height: 50%;
+     margin: 5px auto;
+     
      display: flex;
      flex-direction: row;
-     margin-left: auto;
-     margin-right: auto;
+     align-items: center;
+}
+
+.logo a {
+     text-decoration: none;
 }
 
 
-.logo img
-{
-     float: left;
+.logo img {
      width: 30px;
      height: 30px;
-     margin-top: 16px;
+     margin-top: 2px;
 }
 
 
-.logo h1
-{
+.logo h1 {
+     margin-left: 15px;
+
      color: white;
      font-family: OpenSans;
      font-weight: lighter;
      font-size: 24px;
-     float: left;
-     margin-top: 15px;
-     margin-left: 15px;
 }
 
 
 
 
 
-.navbar-links
-{
+.navbar-links {
      display: flex;
      flex-direction: row-reverse;
      justify-content: center;
 }
 
 
-.navbar-links a
-{
-     display: inline-block;
+.navbar-links a {
+     margin: 0 auto;
 
-     margin-top: -15px;
-     margin-left: auto;
-     margin-right: auto;
+     display: inline-block;
 
      color: white;
      font-family: OpenSans;
@@ -76,8 +73,7 @@
 
 
 
-.navbar-links a:hover
-{
+.navbar-links a:hover {
      border-bottom: 4px solid white;
 }
 
@@ -147,27 +143,20 @@
      }
 
 
-     .logo
-     {
-          margin-left: 25px;
+     .logo {
+          margin: auto 0 auto 25px;
      }
 
 
-     .logo img
-     {
-          float:left;
+     .logo img {
           width: 40px;
           height: 40px;
-          margin-top: 10px;
      }
 
 
-     .logo h1
-     {
+     .logo h1 {
           color: white;
           font-weight: lighter;
           font-size: 30px;
-          float: left;
-          margin-top: 10px;
      }
 }

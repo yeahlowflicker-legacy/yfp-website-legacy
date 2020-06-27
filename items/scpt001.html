@@ -42,7 +42,7 @@
 
           <section class="page_section" id="introduction">
                <h1>Introduction</h1>
-               <img class="doc_image" src="../res/SCPT001/scpt001-demo.png">
+               <img class="doc_image" src="/res/SCPT001/scpt001-demo.png">
                <p>This is a Python script that generates a random password.</p>
                <p>The following options can be customized by users:</p>
                <ul>
@@ -54,7 +54,7 @@
                <p>At least one of the above options has to be selected. Otherwise, the system will show error.</p>
                <p>To run the program, make sure to have Python 3 installed. Open terminal/cmd in the script directory and type the following command:</p>
                <code class="api_code">python3 password-generator.py</code>
-               <hr width="96%" align="right">
+               <hr width="100%" alignment="right">
                <p>Note #0: The program is tested with Python 3.8.</p>
           </section>
 
@@ -83,77 +83,77 @@
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_0">length</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">The length of the password. This value is inclusively limited between 4 and 100.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_1">num</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Whether numbers are included in the password.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_2">smallChar</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Whether small characters are included in the password.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_3">capChar</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Whether capitalized characters are included in the password.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_4">punc</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Whether punctuations are included in the password.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_5">result</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">The generated password result.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_6">generate()</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Main generation method. Calls genChar() repeatedly according to length.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_7">genType(num, smallChar, capChar, punc)</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Randomly pick the type of the next character to be generated. If the picked type does not meet the requirements, it will be re-generated.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_8">genChar(type)</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Randomly generate a character based on the selected type. The generated character is then added to the result string.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_9">checking()</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Perform checking on the result to see if all of the requirements are included in the password. If not, a random character in the password will be replaced by a new generated character and the checking() method will be called again until the password meets all the requirements.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_9">menu()</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Display the main menu.</p>
                </section>
 

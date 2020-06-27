@@ -7,15 +7,11 @@ body {
      color: #000000;
      font-weight: lighter;
      font-family: goldbill;
+     text-decoration: none;
 }
 
 ul {
-     margin-left: 60px;
      font-size: 24px;
-}
-
-a {
-     color: #00AEB3;
 }
 
 :target {
@@ -27,6 +23,9 @@ a {
 
 
 
+.page_wrapper a{
+     color: #00AEB3;
+}
 
 
 
@@ -36,7 +35,7 @@ a {
 
      text-align: center;
      font-family: goldbill;
-     font-size: 48px;
+     font-size: 30px;
      font-weight: 400;
 }
 
@@ -47,7 +46,7 @@ a {
      justify-content: center;
 
      font-family: OpenSans;
-     font-size: 30px;
+     font-size: 24px;
 }
 
 
@@ -215,9 +214,17 @@ a {
 /* Desktop */
 @media only screen and (min-width: 1000px)
 {
+     ul {
+          margin-left: 60px;
+          font-size: 24px;
+     }
+
+
+
      .page_title {
-          display: inline-block;
           margin-left: 2.6%;
+          display: inline-block;
+          font-size: 48px;
      }
 
      .uuid_label {
