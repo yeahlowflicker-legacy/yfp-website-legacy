@@ -36,9 +36,8 @@ body
 
 
 
-.page_wrapper
-{
-     padding-top: 40px;
+.page_wrapper {
+     padding: 50px 0;
      min-height: 88.2%;
 
      background-color: #f0f0f0;
@@ -51,29 +50,32 @@ body
 }
 
 
-.page_title
-{
-     margin-top: 2.5%;
-     margin-left: 3%;
-     display: inline-block;
+.page_title {
+     margin: 10% auto;
+
+     display: flex;
+     justify-content: center;
 
      font-family: cabrion;
-     font-size: 54px;
+     font-size: 48px;
      font-weight: 400;
 }
 
 
 
 /* Desktop */
-@media only screen and (min-width: 950px)
+@media only screen and (min-width: 1000px)
 {
-     .page_wrapper
-     {
+     .page_wrapper {
           padding-top: 60px;
      }
 
-     .top-placeholder
-     {
+     .top-placeholder {
           height: 0;
+     }
+
+     .page_title {
+          margin: 2.5% 0 0 3%;
+          justify-content: start;
      }
 }

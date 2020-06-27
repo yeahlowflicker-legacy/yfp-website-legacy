@@ -1,7 +1,6 @@
 <html>
 
-<meta charset="UTF-8" content="no-cache, no-store, must-revalidate">
-
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=0.8, no-cache, no-store, must-revalidate">
 <head>
      <title>PRJ004 | YFP</title>
      <link rel="icon" href="/res/TAB_ICON.png">
@@ -124,7 +123,7 @@
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_0">instance</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Singleton instance of language master. As long as reference object is
                          present, communication with language master can be done by calling this instance property.</p>
                     <code class="api_code">YFLanguageMaster.instance.GetItem("hello_world", "en-us");</code>
@@ -133,7 +132,7 @@
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_1">AddItem (string name)</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Add a new item to language master.</p>
                     <code class="api_code">YFLanguageMaster.instance.AddItem("foo");</code>
                </section>
@@ -141,28 +140,28 @@
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_2">AddLanguage (string langauge_name)</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Add a new language to language master.</p>
                     <code class="api_code">YFLanguageMaster.instance.AddLanguage("en-uk");</code>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_3">GetItem (string name, string language)</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Return a value based on name and language.</p>
                     <code class="api_code">YFLanguageMaster.instance.GetItem("hello_world", "en-us");</code>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_4">RemoveLanguage (string langauge_name)</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Remove a language from language master.</p>
                     <code class="api_code">YFLanguageMaster.instance.RemoveLanguage("en-uk");</code>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_5">RenameLanguage (int index, string newName)</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Rename a language from language master, using item index as identifier.</p>
                     <code class="api_code">YFLanguageMaster.instance.GetItem(0, "en");</code>
                </section>
@@ -170,7 +169,7 @@
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_6">SetItem (string name, string language, string
                          value)</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Set the value of an item based on name and language.</p>
                     <code
                          class="api_code">YFLanguageMaster.instance.SetItem("hello_world", "en-us", "Hello World!");</code>

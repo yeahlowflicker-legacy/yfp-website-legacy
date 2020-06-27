@@ -10,7 +10,6 @@ var html = '\
                <a href="/about.html">About Us</a>\
                <a href="/scripts.html">Scripts</a>\
                <a href="/projects.html">Projects</a>\
-               <a href="/products.html">Products</a>\
                <a href="/index.html">Home</a>\
           </section>';
 
