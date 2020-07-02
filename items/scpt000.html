@@ -24,7 +24,7 @@
 
           <div class="top-placeholder"></div>
           <label class="uuid_label">SCPT000 | Script</label>
-          <label class="page_title">Linux Desktop Entry Generator</label>
+          <label class="item-title">Linux Desktop Entry Generator</label>
 
 
 
@@ -42,11 +42,11 @@
 
           <section class="page_section" id="introduction">
                <h1>Introduction</h1>
-               <img class="doc_image" src="../res/SCPT000/scpt000-demo.png">
+               <img class="doc_image" src="/res/SCPT000/scpt000-demo.png">
                <p>This is a Python script that generates desktop entries for applications in Linux systems.</p>
                <p>To run the program, make sure to have Python 3 installed. Open terminal/cmd in the script directory and type the following command:</p>
                <code class="api_code">python3 desktop-entry-generator.py</code>
-               <hr width="96%" align="right">
+               <hr>
                <p>Note #0: The program is tested with Python 3.8.</p>
                <p>Note #1: The program only generates entries with application type. Other entry types are not supported.</p>
                <p>Note #2: Generated files are placed at <i>home/.local/share/applications</i> .</p>
@@ -70,27 +70,27 @@
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_0">_name()</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Take the name of the application from user input. This field is required. If the input is invalid (i.e. empty), it calls itself again.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_1">_version()</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Take the version of the application from user input.</p>
                </section>
 
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_2">_exec()</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Take the path of the executable from user input. This field is required. If the input path is invalid, it calls itself again.</p>
                </section>
 
                <section class="api_item_container">
                     <label class="api_item_title" id="api_item_3">_icon()</label>
-                    <hr width="96%" align="right">
+                    <hr>
                     <p class="api_item_desc">Take the path of the icon of the application.</p>
                </section>
 
@@ -100,6 +100,7 @@
 
           <section class="page_section" id="source-code">
                <h1>Source Code</h1>
+               <a href="https://github.com/YeahlowflickerProduction/Open-Source-Scripts/releases/download/1.0/scpt000.py">Download</a>
                <pre class="code-block">
                     <code>
 '''
@@ -189,8 +190,9 @@ if __name__ == "__main__":
 
           <section class="page_section" id="links">
                <h1>Links</h1>
+               <a class="links" href="https://github.com/YeahlowflickerProduction/Open-Source-Scripts/releases/download/1.0/scpt000.py">Download</a>
                <a class="links" href="https://github.com/YeahlowflickerProduction/Open-Source-Scripts/blob/master/SCPT000/desktop-entry-generator.py" target="_blank">View On GitHub</a>
-               <a class="links" href="https://www.python.org/downloads/" target="_blank">Download Python</a>
+               <a class="links" href="https://www.python.org/downloads/" target="_blank">Python</a>
                <a class="links" href="https://www.mit.edu/~amini/LICENSE.md" target="_blank">MIT License</a>
           </section>
 

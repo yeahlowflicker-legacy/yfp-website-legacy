@@ -6,7 +6,7 @@ body {
      background: #121212;
      color: #000000;
      font-weight: lighter;
-     font-family: goldbill;
+     font-family: OpenSans;
      text-decoration: none;
 }
 
@@ -29,13 +29,15 @@ ul {
 
 
 
-.page_title {
+.item-title {
+     margin: 5% auto;
+
      display: flex;
      justify-content: center;
 
      text-align: center;
-     font-family: goldbill;
-     font-size: 30px;
+     font-family: OpenSans;
+     font-size: 36px;
      font-weight: 400;
 }
 
@@ -63,7 +65,7 @@ ul {
 }
 
 .main-image img {
-     width: 80%;
+     width: 100%;
 }
 
 
@@ -75,7 +77,6 @@ ul {
 
 .content-youtube-video {
      width: 100%;
-     margin-left: 5%;
      margin-bottom: 80px;
 }
 
@@ -86,7 +87,7 @@ ul {
      margin-bottom: 50px;
      margin-left: auto;
      margin-right: auto;
-     width: 90%;
+     width: 100%;
      height: auto;
 }
 
@@ -193,8 +194,8 @@ ul {
 
 
 .code-block {
-     margin: 0 8% 0 8%;
-     padding: 3%;
+     margin: 0;
+     padding: 20px;
      overflow: auto;
 
      background-color: #eaeaea;
@@ -211,6 +212,21 @@ ul {
 
 
 
+
+
+#source-code a {
+     margin: 0 0 30px 0;
+
+     font-size: 24px;
+     font-weight: bold;
+     text-decoration: none;
+}
+
+
+
+
+
+
 /* Desktop */
 @media only screen and (min-width: 1000px)
 {
@@ -218,19 +234,19 @@ ul {
           margin-left: 60px;
           font-size: 24px;
      }
+     
 
 
 
-     .page_title {
-          margin-left: 2.6%;
+     .item-title {
+          margin: 0 0 1% 2.5%;
           display: inline-block;
           font-size: 48px;
      }
 
      .uuid_label {
-          float: right;
-          margin-top: 2.5%;
-          margin-right: 1.6%;
+          margin: 2.5% 0 0 2.5%;
+          justify-content: start;
      }
 
 
@@ -253,10 +269,6 @@ ul {
           padding: 1% 5% 3% 5%;
      }
 
-     .page_section p {
-          margin-left: 5%;
-     }
-
      .page_section h1 {
           margin: 5% 0;
      }
@@ -265,18 +277,10 @@ ul {
 
 
 
-     .link {
-          margin-left: 5%;
-     }
 
 
 
 
-
-
-     .api_item_index {
-          margin-left: 5%;
-     }
 
      .api_item_index a {
           margin-top: 0.8%;
@@ -287,23 +291,28 @@ ul {
      }
 
      .api_item_container hr {
-          width: 92%;
+          width: 100%;
      }
 
      .api_item_title {
-          margin-left: 5%;
-
           font-size: 30px;
      }
 
      .api_item_desc {
           margin-top: 1.5%;
-          margin-left: 10%;
 
           font-size: 24px;
      }
 
      .api_code {
-          margin: 1.5% 4% 1.5% 8%;
+          margin: 1.5% 0;
+     }
+
+
+
+
+
+     #source-code a {
+          margin: 0 auto 5% 0;
      }
 }
