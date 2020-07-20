@@ -11,14 +11,14 @@
 
 #main-contact h1 {
     margin: 50px 0 10px 0;
-    font-size: 30px;
+    font-size: 22px;
 }
 
 #main-contact input {
     height: 50px;
     padding: 0 15px;
 
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #main-contact textarea {
@@ -26,8 +26,8 @@
     padding: 12px 15px;
     resize: none;
 
-    font-size: 24px;
     min-height: 300px;
+    font-size: 18px;
 }
 
 #main-contact button {
@@ -46,26 +46,11 @@
     height: 50px;
     padding: 0 15px;
 
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #main-contact option {
-    font-size: 24px;
-}
-
-
-
-
-#success-notifier {
-    height: 300px;
-    box-sizing: border-box;
-
-    background-color: white;
-}
-
-#success-notifier p {
-    font-size: 24px;
-    text-align: center;
+    font-size: 18px;
 }
 
 
@@ -79,10 +64,16 @@
 
     #main-contact h1 {
         margin: 3% 0 0.5% 0;
+        font-size: 30px;
+    }
+
+    #main-contact input, #main-contact select, #main-contact option {
+        font-size: 24px;
     }
 
     #main-contact textarea {
         margin-bottom: 5%;
+        font-size: 24px;
     }    
 
     #main-contact button {
