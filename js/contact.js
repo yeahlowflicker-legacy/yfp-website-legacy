@@ -19,6 +19,7 @@ function onSubmitClicked() {
     var relatedProduct = document.getElementById("related-product-input").value;
     var subject = document.getElementById("subject-input").value;
     var description = document.getElementById("description-input").value;
+    var sentTime = firebase.firestore.FieldValue.serverTimestamp();
 
 
     //  Data validation
@@ -41,7 +42,8 @@ function onSubmitClicked() {
         "user-email": userEmail,
         "related-product": relatedProduct,
         "subject": subject,
-        "description": description
+        "description": description,
+        "sent-time": sentTime
     });
 
     
