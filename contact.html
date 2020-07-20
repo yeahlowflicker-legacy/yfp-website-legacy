@@ -1,0 +1,62 @@
+<html>
+
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=0.8, no-cache, no-store, must-revalidate">
+
+<link rel="stylesheet" href="/css/page.css">
+<link rel="stylesheet" href="/css/contact.css">
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+<script src="/js/contact.js"></script>
+
+
+
+<head>
+     <title>Contact | YFP</title>
+     <link rel="icon" href="/res/TAB_ICON.png">
+</head>
+
+
+
+<header>
+     <nav id="navbar"></nav>
+     <script src="/js/navbar.js"></script>
+</header>
+
+
+<body>
+    <section class="page_wrapper">
+
+        <div class="top-placeholder"></div>
+        <label class="page_title">Contact</label>
+
+
+        <section id="main-contact">
+            <h1>Your Email Address</h1>
+            <input id="email-input" required>
+
+            <h1>Related Product</h1>
+            <select id="related-product-input" required>
+                <option>N/A</option>
+                <option>Unity Language Toolkit</option>
+            </select>
+
+            <h1>Subject</h1>
+            <input id="subject-input" required>
+
+            <h1>Description</h1>
+            <textarea id="description-input" required></textarea>
+
+            <button onclick="onSubmitClicked()">Submit</button>
+        </section>
+    </section>
+</body>
+
+
+<footer id="footer"></footer>
+<script src="/js/footer.js"></script>
+
+</html>

@@ -98,6 +98,7 @@ hr {
 
      overflow: hidden;
      background-color: #50e01b;
+     font-family: OpenSans;
 }
 
 .featured div {
@@ -161,6 +162,7 @@ hr {
      justify-content: center;
 
      color: black;
+     font-family: OpenSans;
 }
 
 .intro h1 {
@@ -220,6 +222,8 @@ hr {
 .latest {
      width: 100%;
      margin: 5% 0 8% 0;
+
+     font-family: OpenSans;
 }
 
 .latest h1 {
@@ -278,6 +282,7 @@ hr {
 
      color: white;
      font-size: 30px;
+     font-family: OpenSans;
 }
 
 .section-block img {

@@ -1,0 +1,92 @@
+/* Mobile */
+#main-contact, #success-notifier {
+    margin: 0 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: OpenSans;
+}
+
+#main-contact h1 {
+    margin: 50px 0 10px 0;
+    font-size: 30px;
+}
+
+#main-contact input {
+    height: 50px;
+    padding: 0 15px;
+
+    font-size: 24px;
+}
+
+#main-contact textarea {
+    margin-bottom: 50px;
+    padding: 12px 15px;
+    resize: none;
+
+    font-size: 24px;
+    min-height: 300px;
+}
+
+#main-contact button {
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+
+    background-color: #00c500;
+    color: white;
+    border: 0;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+#main-contact select {
+    height: 50px;
+    padding: 0 15px;
+
+    font-size: 24px;
+}
+
+#main-contact option {
+    font-size: 24px;
+}
+
+
+
+
+#success-notifier {
+    height: 300px;
+    box-sizing: border-box;
+
+    background-color: white;
+}
+
+#success-notifier p {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+
+/* Desktop */
+@media only screen and (min-width: 1000px) {
+    #main-contact, #success-notifier {
+        margin: 2% 10%;
+    }
+
+    #main-contact h1 {
+        margin: 3% 0 0.5% 0;
+    }
+
+    #main-contact textarea {
+        margin-bottom: 5%;
+    }    
+
+    #main-contact button {
+        width: 360px;
+        height: 80px;
+    }
+}
